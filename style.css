@@ -1,11 +1,12 @@
 body{
     margin-top: 0;
-    height: 2500px;
-    /* Add your background pattern here */
+    height: 3500px;
     background-color: #313131;
-    background-image: radial-gradient(circle, rgb(85, 187, 250), rgb(0,98,155), rgba(255, 255, 255, 0.171) 3px, transparent 0);
-    background-size: 30px 30px;
-    background-position: -5px -5px
+    background-image: linear-gradient(to bottom, rgba(85, 187, 250, 1), rgba(0,98,155, 1), rgba(255, 255, 255, 0)), 
+                      radial-gradient(circle, rgb(85, 187, 250), rgb(0,98,155), rgba(255, 255, 255, 0.171) 3px, transparent 0);
+    background-size: 100% 100%, 45px 45px;
+    background-position: 0 0, -5px -5px;
+    background-blend-mode: overlay;
 }
 
 .section-header{
@@ -13,13 +14,12 @@ body{
     font-family: Roboto, Arial;
     font-weight: 700;
     font-size: 50px;
-    margin-left: 30px;
+    margin-left: 80px;
 }
 
 .menu-bar{
     margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 100px;
     display: flex;
     align-items: center;
     background-color: rgb(85, 187, 250);
@@ -192,5 +192,47 @@ body{
     margin-top: 200px;
     display: flex;
     flex-direction: column;
+    background-color: lightblue;
+}
+
+.about-writing{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 30px;
+}
+
+.w{
+    background-color: lightcoral;
+    height: 380px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.event-section{
+    margin-top: 150px;
+}
+
+.event-calendar-pos{
+    width: 1100px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 380px;
+    margin-right: 385px;
+    
+}
+
+.event-calendar{
+    height: 800px;
+    width: 1100px;
+    border: solid;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(0, 166, 255);
 }
   
