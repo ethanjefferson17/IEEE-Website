@@ -290,8 +290,8 @@ body{
 }
 
 .card {
- width: 220px;
- height: 300px;
+ width: 200px;
+ height: 320px;
  background: rgb(0,98,155);
  border-radius: 15px;
  box-shadow: 1px 5px 60px 0px #100a886b;
@@ -325,12 +325,12 @@ body{
 
 .card .img {
  width: 130px;
- height: 190px;
- background: rgb(0, 166, 255);
+ height: 230px;
  border-radius: 15px;
- margin: auto;
- margin-top: 25px;
- margin-bottom: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 5px;
+ margin-bottom: 10px;
  padding: 0;
 }
 
