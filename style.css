@@ -1,6 +1,6 @@
 body{
     margin-top: 0;
-    height: 4400px;
+    min-height: 100vh;
     background-color: #313131;
     background-image: linear-gradient(to bottom, rgba(85, 187, 250, 1), rgba(0,98,155, 1), rgba(255, 255, 255, 0)), 
                       radial-gradient(circle, rgb(85, 187, 250), rgb(0,98,155), rgba(255, 255, 255, 0.171) 3px, transparent 0);
@@ -231,9 +231,9 @@ body{
 
 
 .w {
-    background-color: lightcoral;
+    background-color: rgb(48, 48, 48);
     height: 380px;        /* defines the cell height */
-    border-radius: 50px;
+    border-radius: 55px;
     border: solid 5px rgb(0, 166, 255);
     padding: 0;           /* remove padding so image fully fits */
     overflow: hidden;     /* ensures image doesn’t overflow rounded corners */
@@ -337,6 +337,41 @@ body{
 .card:hover{
      box-shadow: 1px 5px 60px 0px rgb(0, 166, 255);
 }
+
+
+.bottom {
+    width: 100%;                    /* span entire width */
+    background-color: rgb(48, 48, 48);
+    border-top: solid 5px rgb(0, 166, 255);
+    margin-top: 100px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-sizing: border-box;         /* ensures padding doesn’t shrink width */
+}
+
+
+.bottom .copyright {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.bottom .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.bottom {
+    margin-top: auto;  /* pushes footer to bottom if page content is short */
+}
+
 
 
 
